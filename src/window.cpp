@@ -135,7 +135,7 @@ void Window::move(int key) {
         case Qt::Key_Left:
             // Если влево, то уменьшаем угол на "step_angle" градусов
             this->current_angle -= this->step_angle->value();
-            // не допускаем чтбы угол был меньше 0
+            // не допускаем чтобы угол был меньше 0
             if (this->current_angle < 0) {
                 this->current_angle = 360 + this->current_angle;
             };
@@ -143,7 +143,7 @@ void Window::move(int key) {
         case Qt::Key_Right:
             // Если вправо, то увеличиваем угол на "step_angle" градусов
             this->current_angle += this->step_angle->value();
-            // не допускаем чтбы угол был больше 360
+            // не допускаем чтобы угол был больше 360
             if (this->current_angle > 360) {
                 this->current_angle = this->current_angle - 360;
             };
@@ -240,6 +240,7 @@ void Window::paintEvent(QPaintEvent *e) {
     
     if (!this->isGameOver) {        
         // В режиме когда игра не закончена
+        
         // Рисуем яблоко
         painter.drawPixmap(this->applePos.first, this->applePos.second, this->apple_image);                    
         // Рисуем змею
