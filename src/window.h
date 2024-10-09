@@ -11,14 +11,14 @@ using namespace std;
 class Window : public QWidget {
 Q_OBJECT    
 private:    
-    // Текущее направления движения змеи (UP, DOWN, LEFT, RIGHT)
-    int direction;
+    // Текущий угол под которым движется змея
     int current_angle = 0;
     // Объект таймера, через который реализуется основной цикл игры
     QTimer *timer;
     // Поверхность игрового поля
     QLabel *surface;
-    // Поле ввода угла наклона
+    // Поле ввода значения угла, на которое меняется угол
+    // под которым движется змея при управлении
     QSpinBox *step_angle;
     // Изображения
     // Фон

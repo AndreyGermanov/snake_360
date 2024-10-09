@@ -82,7 +82,7 @@ void Window::loadImages()
 
 /// @brief Старт игры
 void Window::initGame() {
-    // Изначально змея движется вправо 
+    // Изначально змея движется горизонтально 
     this->current_angle = 0;
     // Размещаем яблоко
     this->locateApple();
