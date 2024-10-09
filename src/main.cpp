@@ -1,6 +1,4 @@
 #include "window.h"
-#include "matrix.h"
-#include "math.h"
 #include <QApplication>
 
 using namespace std;
